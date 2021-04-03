@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+
+// All pages
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#header {
+  background-color: pink;
+  padding: 10px;
+}
+
+.title:link {
+  text-decoration: none;
+}
+
+.title:visited {
+  color: black;
+}
+
+// Home Page
+
+#projectPageWrapper {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+}
+
+#subTitle {
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.projectArea {
+  position:relative;
+  width: 350px;;
+  height: 300px;
+  margin: 0 30px 80px 30px;;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid gray;
+  
+}
+
+.projectTitle {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  font-size: 34px;
+  width: 75%;
+}
+
+.projectDescription {
+  margin: 0;
+  position: absolute;
+  bottom: 10%;
+  width: 70%;
+}
+
+#freshHops {
+  font-family: 'Montserrat', sans-serif;
+  animation-name: move-title;
+  animation-duration: 1s;
+  transition: all 500ms;
+
+  .projectArea:hover & {
+    transform: translateY(-100px);
+    text-shadow: 2.0px 2.0px #00CEE0;
+  }
+}
+
+#movieSagas {
+  font-family: 'Limelight', cursive;
+  transition: all 500ms;
+
+  .projectArea:hover & {
+    transform: translateY(-100px);
+    text-shadow: 2.0px 2.0px gray;
+  }
+}
+
+#hopsDesc {
+  color: white;
+  transition: all 500ms;
+
+  .projectArea:hover & {
+    color: black;
+    transform: translateY(-80px);
+
+  }
+}
+
+#movieDesc {
+  color: white;
+  transition: all 500ms;
+
+  .projectArea:hover & {
+    color: black;
+    transform: translateY(-80px);
+
+  }
+}
+
+.link {
+  transform: translateY(250px);
+  color: white;
+
+  .projectArea:hover & {
+    color: black;
+  }
+  
+}
+
+// Detail Page
+
+.detailPageWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailPageTitleDiv {
+  display: flex;
+  height: 90vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailsTitle {
+  font-size: 42px;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 2.0px 2.0px #00CEE0;
+}
+
+.detailsDescription {
+  height: 65vh;
+  width: 60%;
+  text-align: left;
+}
