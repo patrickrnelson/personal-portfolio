@@ -12,6 +12,8 @@ body {
   text-align: center;
   margin: 0;
   font-family: sans-serif;
+  background-color: #353238;
+  color: #24262D;
 }
 
 #header {
@@ -19,8 +21,13 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: pink;
+  background-color: #FF9A5C;
   padding: 10px;
+}
+
+.h2 {
+  margin: 5px 0 20px 0;
+  font-size: large;
 }
 
 .title:link {
@@ -64,6 +71,7 @@ body {
 
 #subTitle {
   margin: 40px 0;
+  font-size: larger;
   display: flex;
   align-items: center;
   text-align: center;
@@ -81,8 +89,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid gray;
-  
+  background-color: #FDFFFC;
+  border-radius: 3px;;
 }
 
 .projectTitle {
@@ -179,12 +187,20 @@ body {
 
 .detailsDescription {
   height: 65vh;
-  width: 50%;
-  text-align: left;
+  width: 40%;
+  text-align: justify;
+  text-justify: newspaper;
+  line-height: 1.5;
+}
+
+.images {
+  width: 60%;
+  margin-bottom: 100px;
 }
 
 .logos {
   margin: 20px 0;
+  width: 60%;
   display: flex;
   justify-content: space-around;
 }
