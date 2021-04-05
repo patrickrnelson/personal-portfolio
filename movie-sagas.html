@@ -5,22 +5,57 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <title>Movie Sagas</title>
 </head>
 <body>
   <div id="header">
-    <h1>Patrick Nelson</h1>
-    <h2>Full Stack Software Developer</h2>
+    <h1 class="h1">Patrick Nelson</h1>
+    <h2 class="h2">Full Stack Software Developer</h2>
     <div class="nav"> 
       <a class="navText" href="./index.html">Projects</a>
-      <a class="navText" href="./index.html">About Me</a>
+      <a class="navText" href="./about-me.html">About Me</a>
       <a href="https://www.linkedin.com/in/patrick-nelson1/" target="_blank"><img src="./images/linkedIn-logo.png" height="25px"/></a>
       <a href="https://github.com/patrickrnelson" target="_blank"><img src="./images/github.png" height="25px"/></a>
     </div>
   </div>
 
-  <div>
-    <h3>Movie Sagas</h3>
+  <div class="detailPageWrapper">
+    <div class="detailPageTitleDiv">
+      <h3 class="detailsTitle movies">MovieSagas</h3>
+    </div>
+
+    <div class="images">
+      <div class="movieImg" data-aos="fade-right" data-aos-duration="500" data-aos-offset="200"	> <img src="./images/MovieListPage.png"  height="500px"/></div>
+      <div class="movieImg" data-aos="fade-left" data-aos-duration="500" data-aos-offset="300"	> <img src="./images/MovieDetailsPage.png"  height="500px"/></div>
+      <div data-aos="fade-right" data-aos-duration="500" data-aos-offset="400"	> <img src="./images/FormPage.png"  height="500px"/></div>
+    </div>
+
+    <div class="detailsDescription">
+      <p>
+        The sixth weekend challenge of Prime Digital Academy. The challenge was to use React.js/Redux to display a list of movies, click on a movie to view 
+        more information about it, and include a form for users to create a new movie item in the list.
+      </p>
+    </div>
+
+    <!-- <div>
+      <p>Built using:</p>
+    </div> -->
+    <div class="logos">
+      <img src="./images/react-js-blog-header.png" alt="react.js logo" height="50px"/>
+      <img src="./images/redux-logo.png" alt="redux logo" height="50px"/>
+      <img src="./images/redux-saga.png" alt="redux sagas logo" height="50px"/>
+      <img src="./images/nodejs-logo.png" alt="node.js logo" height="50px"/>
+      <img src="./images/postgresql-logo.png" alt="postgresql logo" height="50px"/>
+      <img src="./images/material-ui-logo.png" alt="material ui logo" height="50px"/>
+    </div>
   </div>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

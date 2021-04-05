@@ -5,15 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
   <title>Fresh Hops FS App</title>
 </head>
 <body>
   <div id="header">
-    <h1>Patrick Nelson</h1>
-    <h2>Full Stack Software Developer</h2>
+    <h1 class="h1">Patrick Nelson</h1>
+    <h2 class="h2">Full Stack Software Developer</h2>
     <div class="nav"> 
       <a class="navText" href="./index.html">Projects</a>
-      <a class="navText" href="./index.html">About Me</a>
+      <a class="navText" href="./about-me.html">About Me</a>
       <a href="https://www.linkedin.com/in/patrick-nelson1/" target="_blank"><img src="./images/linkedIn-logo.png" height="25px"/></a>
       <a href="https://github.com/patrickrnelson" target="_blank"><img src="./images/github.png" height="25px"/></a>
     </div>
@@ -21,7 +23,13 @@
 
   <div class="detailPageWrapper">
     <div class="detailPageTitleDiv">
-      <h3 class="detailsTitle">Fresh Hops</h3>
+      <h3 class="detailsTitle freshHops">Fresh Hops</h3>
+    </div>
+
+    <div class="images">
+      <div data-aos="fade-up" data-aos-duration="500" data-aos-offset="200"	> <img src="./images/login-page.png"  height="500px"/></div>
+      <div data-aos="fade-up" data-aos-duration="500" data-aos-offset="300"	> <img src="./images/homepage.png"  height="500px"/></div>
+      <div data-aos="fade-up" data-aos-duration="500" data-aos-offset="400"	> <img src="./images/my-beers.png"  height="500px"/></div>
     </div>
 
     <div class="detailsDescription">
@@ -31,14 +39,10 @@
         The recommendations are served using a custom algorithm that I developed.
       </p>
     </div>
-    <div class="images">
-      <img src="./images/homepage_iphone.png" height="500px"/>
-      <img src="./images/welcome-search.png" height="500px"/>
-      <img src="./images/beer_details.png" height="500px"/>
-    </div>
-    <div>
+
+    <!-- <div>
       <p>Built using:</p>
-    </div>
+    </div> -->
     <div class="logos">
       <img src="./images/react-js-blog-header.png" alt="react.js logo" height="50px"/>
       <img src="./images/redux-logo.png" alt="redux logo" height="50px"/>
@@ -48,5 +52,11 @@
       <img src="./images/material-ui-logo.png" alt="material ui logo" height="50px"/>
     </div>
   </div>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
