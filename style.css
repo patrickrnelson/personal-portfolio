@@ -171,16 +171,17 @@ body {
 }
 
 #notn {
-  font-family: 'Spartan', cursive;
+  font-family: 'Spartan', sans-serif;
   -webkit-transition: all 500ms;
   transition: all 500ms;
+  font-weight: 400;
 }
 
 .projectArea:hover #notn {
   -webkit-transform: translateY(-100px);
           transform: translateY(-100px);
   color: #78AF61;
-  font-weight: bolder;
+  font-weight: 400;
 }
 
 #movieSagas {

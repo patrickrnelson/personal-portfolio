@@ -138,13 +138,14 @@ body {
 }
 
 #notn {
-  font-family: 'Spartan', cursive;
+  font-family: 'Spartan', sans-serif;
   transition: all 500ms;
+  font-weight: 400;
 
   .projectArea:hover & {
     transform: translateY(-100px);
     color: #78AF61;
-    font-weight: bolder;
+    font-weight: 400;
     // text-shadow: 2.0px 2.0px black;
   }
 }
