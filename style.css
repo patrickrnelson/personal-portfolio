@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap");
 [aos="fade"] {
   opacity: 0.5;
   -webkit-transition-property: opacity;
@@ -169,6 +170,19 @@ body {
   text-shadow: 2.0px 2.0px #00CEE0;
 }
 
+#notn {
+  font-family: 'Spartan', cursive;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.projectArea:hover #notn {
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  color: #78AF61;
+  font-weight: bolder;
+}
+
 #movieSagas {
   font-family: 'Limelight', cursive;
   -webkit-transition: all 500ms;
@@ -188,6 +202,18 @@ body {
 }
 
 .projectArea:hover #hopsDesc {
+  color: black;
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px);
+}
+
+#notnDesc {
+  color: white;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.projectArea:hover #notnDesc {
   color: black;
   -webkit-transform: translateY(-80px);
           transform: translateY(-80px);
@@ -235,6 +261,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 70vh;
   text-align: center;
   -webkit-box-pack: center;
@@ -246,9 +276,17 @@ body {
 }
 
 .freshHops {
+  margin-bottom: 20px;
   font-size: 42px;
   font-family: 'Montserrat', sans-serif;
   text-shadow: 2.0px 2.0px #00CEE0;
+}
+
+.notn {
+  margin-bottom: 50px;
+  font-size: 42px;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
 }
 
 .movies {
@@ -282,6 +320,25 @@ body {
 
 .projectLink:hover {
   color: #00CEE0;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.natureProjectLink {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.natureProjectLink:visted {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.natureProjectLink:hover {
+  color: #78AF61;
   font-weight: bold;
   text-decoration: underline;
 }

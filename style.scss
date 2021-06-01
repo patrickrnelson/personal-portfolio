@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap');
 
 [aos="fade"] {
   opacity: 0.5;
@@ -136,6 +137,18 @@ body {
   }
 }
 
+#notn {
+  font-family: 'Spartan', cursive;
+  transition: all 500ms;
+
+  .projectArea:hover & {
+    transform: translateY(-100px);
+    color: #78AF61;
+    font-weight: bolder;
+    // text-shadow: 2.0px 2.0px black;
+  }
+}
+
 #movieSagas {
   font-family: 'Limelight', cursive;
   transition: all 500ms;
@@ -147,6 +160,17 @@ body {
 }
 
 #hopsDesc {
+  color: white;
+  transition: all 500ms;
+
+  .projectArea:hover & {
+    color: black;
+    transform: translateY(-80px);
+
+  }
+}
+
+#notnDesc {
   color: white;
   transition: all 500ms;
 
@@ -189,6 +213,7 @@ body {
 
 .detailPageTitleDiv {
   display: flex;
+  flex-direction: column;
   height: 70vh;
   text-align: center;
   justify-content: center;
@@ -196,9 +221,18 @@ body {
 }
 
 .freshHops {
+  margin-bottom: 20px;
   font-size: 42px;
   font-family: 'Montserrat', sans-serif;
   text-shadow: 2.0px 2.0px #00CEE0;
+}
+
+.notn {
+  margin-bottom: 50px;
+  font-size: 42px;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  // text-shadow: 2.0px 2.0px #00CEE0;
 }
 
 .movies {
@@ -229,6 +263,25 @@ body {
 
 .projectLink:hover {
   color: #00CEE0;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.natureProjectLink {
+  font-size: 18px;;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.natureProjectLink:visted {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.natureProjectLink:hover {
+  color: #78AF61;
   font-weight: bold;
   text-decoration: underline;
 }
